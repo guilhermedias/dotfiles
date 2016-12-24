@@ -1,0 +1,21 @@
+# Path to your oh-my-zsh installation.
+export ZSH=/Users/guilherme/.oh-my-zsh
+
+# Set name of the theme to load.
+ZSH_THEME="breja"
+
+# Disable auto-setting terminal title.
+DISABLE_AUTO_TITLE="true"
+
+# Which plugins would you like to load?
+plugins=(git z)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# Use Vi keybindings
+bindkey -v
+
+# And keep the history search
+bindkey '^R' history-incremental-search-backward
