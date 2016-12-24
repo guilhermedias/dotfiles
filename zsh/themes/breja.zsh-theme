@@ -14,6 +14,8 @@ local git_branch='$(git_prompt_info)%{$reset_color%}'
 PROMPT="╭─○ ${user_host} ${current_dir} ${git_branch}
 ╰─○ %B${user_symbol}%b "
 
+RPS1="%*"
+
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}]"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}%B✓%b"
