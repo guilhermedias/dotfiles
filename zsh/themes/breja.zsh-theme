@@ -32,11 +32,7 @@ function precmd {
   # Set formatted_elapsed_time
   format_elapsed_time
 
-  RPS1="Elapsed time: ${formatted_elapsed_time}"
-}
-
-function current_time_millis {
-  echo $(python -c 'import time; print(int(round(time.time() * 1000)))')
+  configure_right_justified_prompt
 }
 
 function calculate_elapsed_time {
@@ -64,6 +60,19 @@ function format_elapsed_time {
   else
     unset formatted_elapsed_time
   fi
+}
+
+function configure_right_justified_prompt {
+  if [[ $formatted_elapsed_time ]]; then
+    RPS1="Elapsed time: ${formatted_elapsed_time}"
+  else
+    RPS1=""
+  fi
+
+}
+
+function current_time_millis {
+  echo $(python -c 'import time; print(int(round(time.time() * 1000)))')
 }
 
 function calculate_milliseconds {
