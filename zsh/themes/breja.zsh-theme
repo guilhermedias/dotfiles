@@ -64,7 +64,7 @@ function format_elapsed_time {
 
 function configure_right_justified_prompt {
   if [[ $formatted_elapsed_time ]]; then
-    RPS1="Elapsed time: ${formatted_elapsed_time}"
+    RPS1="%{$terminfo[bold]$fg[white]%}${formatted_elapsed_time}%{$reset_color%}"
   else
     RPS1=""
   fi
