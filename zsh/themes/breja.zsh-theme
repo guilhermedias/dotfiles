@@ -43,3 +43,12 @@ function calculate_elapsed_time {
     command_elapsed_time=''
   fi
 }
+
+function calculate_rounded_millis {
+  echo $((($1 / 1000) * 1000))
+}
+
+function calculate_fractional_millis {
+  rounded_millis=$(calculate_rounded_millis $1)
+  echo $(($1 - rounded_millis))
+}
