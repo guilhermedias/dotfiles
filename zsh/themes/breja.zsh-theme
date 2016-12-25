@@ -14,8 +14,6 @@ local git_branch='$(git_prompt_info)%{$reset_color%}'
 PROMPT="╭─○ ${user_host} ${current_dir} ${git_branch}
 ╰─○ %B${user_symbol}%b "
 
-RPS1="%*"
-
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}["
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[yellow]%}]"
 ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}%B✓%b"
@@ -33,6 +31,8 @@ function precmd {
 
   # Set formatted_elapsed_time
   format_elapsed_time
+
+  RPS1="Elapsed time: ${formatted_elapsed_time}"
 }
 
 function current_time_millis {
