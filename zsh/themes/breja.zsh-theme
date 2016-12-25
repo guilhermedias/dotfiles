@@ -50,17 +50,23 @@ function calculate_elapsed_time {
 
 function format_elapsed_time {
   if [[ $command_elapsed_time != '' ]]; then
-    decimal_millis=$(calculate_decimal_millis $command_elapsed_time)
+    milliseconds=$(calculate_milliseconds $command_elapsed_time)
     seconds=$(calculate_seconds $command_elapsed_time)
     minutes=$(calculate_minutes $command_elapsed_time)
     hours=$(calculate_hours $command_elapsed_time)
-    formatted_elapsed_time='Batatinha'
+
+    formatted_milliseconds=$(adjust_to_field_size milliseconds 3)
+    formatted_seconds=$(adjust_to_field_size seconds 2)
+    formatted_minutes=$(adjust_to_field_size minutes 2)
+    formatted_hours=$(adjust_to_field_size hours 2)
+
+    formatted_elapsed_time="${formatted_hours}:${formatted_minutes}:${formatted_seconds}.${formatted_milliseconds}"
   else
     formatted_elapsed_time=''
   fi
 }
 
-function calculate_decimal_millis {
+function calculate_milliseconds {
   echo $(($1 - (($1 / 1000) * 1000)))
 }
 
@@ -74,4 +80,8 @@ function calculate_minutes {
 
 function calculate_hours {
   echo $((($1 / 360000) % 60))
+}
+
+function adjust_to_field_size {
+  echo $(printf "%0$2d" $1)
 }
