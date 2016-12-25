@@ -53,6 +53,7 @@ function format_elapsed_time {
     decimal_millis=$(calculate_decimal_millis $command_elapsed_time)
     seconds=$(calculate_seconds $command_elapsed_time)
     minutes=$(calculate_minutes $command_elapsed_time)
+    hours=$(calculate_hours $command_elapsed_time)
     formatted_elapsed_time='Batatinha'
   else
     formatted_elapsed_time=''
@@ -68,5 +69,9 @@ function calculate_seconds {
 }
 
 function calculate_minutes {
-  echo $((($1 / 1000 / 60) % 60))
+  echo $((($1 / 60000) % 60))
+}
+
+function calculate_hours {
+  echo $((($1 / 360000) % 60))
 }
