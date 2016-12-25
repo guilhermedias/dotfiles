@@ -44,12 +44,12 @@ function calculate_elapsed_time {
     command_elapsed_time=$(($(current_time_millis) - start_time))
     unset start_time
   else
-    command_elapsed_time=''
+    unset command_elapsed_time
   fi
 }
 
 function format_elapsed_time {
-  if [[ $command_elapsed_time != '' ]]; then
+  if [[ $command_elapsed_time ]]; then
     milliseconds=$(calculate_milliseconds $command_elapsed_time)
     seconds=$(calculate_seconds $command_elapsed_time)
     minutes=$(calculate_minutes $command_elapsed_time)
@@ -62,7 +62,7 @@ function format_elapsed_time {
 
     formatted_elapsed_time="${formatted_hours}:${formatted_minutes}:${formatted_seconds}.${formatted_milliseconds}"
   else
-    formatted_elapsed_time=''
+    unset formatted_elapsed_time
   fi
 }
 
