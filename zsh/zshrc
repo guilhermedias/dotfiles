@@ -19,3 +19,6 @@ bindkey -v
 
 # And keep the history search
 bindkey '^R' history-incremental-search-backward
+
+# Configure the PATH variable
+export PATH=$PATH:/usr/local/bin
