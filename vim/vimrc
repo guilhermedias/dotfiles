@@ -1,0 +1,11 @@
+" Enable relative line numbers
+set rnu
+
+" Replace tabs for 2 spaces
+set expandtab
+set ts=2
+set sw=2
+
+" Load configuration modules
+source ~/.vim/modules/colors.vim
+source ~/.vim/modules/nerd-tree.vim
