@@ -8,7 +8,7 @@ ZSH_THEME="breja"
 DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load?
-plugins=(git z)
+plugins=(z)
 
 source $ZSH/oh-my-zsh.sh
 
