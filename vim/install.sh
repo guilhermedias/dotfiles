@@ -1,3 +1,5 @@
+brew install vim
+
 ln -sf $PWD/vim/vimrc ~/.vimrc
 
 mkdir -p ~/.vim/autoload
