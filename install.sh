@@ -19,3 +19,4 @@ brew tap caskroom/cask
 
 # Load configuration modules
 source vim/install.sh
+source zsh/install.sh
