@@ -12,5 +12,8 @@ fi
 echo "Updating Homebrew"
 brew update
 
+echo "Installing Homebrew Cask"
+brew tap caskroom/cask
+
 # Load configuration modules
 source vim/install.sh
