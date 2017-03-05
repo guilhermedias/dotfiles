@@ -21,16 +21,9 @@ set encoding=utf8
 
 " Load configuration modules
 source ~/.vim/modules/colors.vim
-source ~/.vim/modules/nerd-tree-highlight.vim
 
 " Plugins
 call plug#begin('~/.vim/plugged')
   " Nerd Tree
   Plug 'scrooloose/nerdtree'
-
-  " Nerd Tree Highlight
-  Plug 'https://github.com/tiagofumo/vim-nerdtree-syntax-highlight.git'
-
-  " Dev Icons
-  Plug 'https://github.com/ryanoasis/vim-devicons.git'
 call plug#end()
