@@ -1,12 +1,10 @@
 #!/usr/bin/env zsh
 
-# Install and update Homebrew
-if [ ! $(which brew) ]
-then
+if which brew > /dev/null; then
+  echo "Brew already installed"
+else
   echo "Installing Homebrew"
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-else
-  echo "Brew already installed"
 fi
 
 echo "Updating Homebrew"
