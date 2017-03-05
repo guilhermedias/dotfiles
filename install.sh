@@ -1,1 +1,1 @@
-source $PWD/vim/install.zsh
+source $PWD/vim/install.sh
