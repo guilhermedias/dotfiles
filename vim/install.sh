@@ -9,3 +9,5 @@ ln -sf $PWD/vim/colors/gruvbox.vim ~/.vim/colors/gruvbox.vim
 mkdir -p ~/.vim/modules
 ln -sf $PWD/vim/modules/colors.vim ~/.vim/modules/colors.vim
 ln -sf $PWD/vim/modules/nerd-tree.vim ~/.vim/modules/nerd-tree.vim
+
+vim +PlugClean +PlugInstall +qall
