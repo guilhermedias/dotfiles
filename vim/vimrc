@@ -6,6 +6,16 @@ set expandtab
 set ts=2
 set sw=2
 
+" Enable syntax highlight
+syntax enable
+
+" Set new buffer position
+set splitright
+set splitbelow
+
+" Show the current command
+set showcmd
+
 " Load configuration modules
 source ~/.vim/modules/colors.vim
 source ~/.vim/modules/nerd-tree.vim
