@@ -20,6 +20,9 @@ if vim_is_installed; then
     brew cleanup vim
   fi
 else
+  # Needs to be linked
+  brew link gdbm
+
   echo "Installing Vim"
   brew install vim
 fi
