@@ -28,3 +28,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
 # For some reason I need this
 export LC_ALL=en_US.UTF-8
+
+# Source temporary configuration
+if [ -f ~/.zshrc-temp ]; then
+    source ~/.zshrc-temp
+fi
