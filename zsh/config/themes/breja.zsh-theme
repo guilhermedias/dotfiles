@@ -7,7 +7,13 @@ else
     local user_symbol='$'
 fi
 
-local current_dir='%{$terminfo[bold]$fg[blue]%} %~%{$reset_color%}'
+local current_dir_pref='%~'
+
+if [[ "$ITERM_PROFILE" == "Trainer" ]]; then
+    current_dir_pref='%1d'
+fi
+
+local current_dir='%{$terminfo[bold]$fg[blue]%}${current_dir_pref}%{$reset_color%}'
 
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
