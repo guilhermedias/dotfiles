@@ -22,3 +22,6 @@ bindkey '^R' history-incremental-search-backward
 
 # Configure the PATH variable
 export PATH=$PATH:/usr/local/bin
+
+# Java home
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
