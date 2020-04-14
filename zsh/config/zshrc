@@ -24,7 +24,7 @@ bindkey '^R' history-incremental-search-backward
 export PATH=$PATH:/usr/local/bin
 
 # Java home
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 
 # For some reason I need this
 export LC_ALL=en_US.UTF-8
