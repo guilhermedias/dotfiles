@@ -1504,6 +1504,44 @@ Survey:Restore Window Arrangement as Tabs</string>
 				<array>
 					<dict>
 						<key>class</key>
+						<string>iTermStatusBarGitComponent</string>
+						<key>configuration</key>
+						<dict>
+							<key>knobs</key>
+							<dict>
+								<key>base: compression resistance</key>
+								<integer>1</integer>
+								<key>base: priority</key>
+								<real>5</real>
+								<key>iTermStatusBarGitComponentPollingIntervalKey</key>
+								<real>2</real>
+								<key>maxwidth</key>
+								<real>+infinity</real>
+								<key>minwidth</key>
+								<integer>0</integer>
+								<key>shared text color</key>
+								<dict>
+									<key>Alpha Component</key>
+									<real>1</real>
+									<key>Blue Component</key>
+									<real>0.63</real>
+									<key>Color Space</key>
+									<string>sRGB</string>
+									<key>Green Component</key>
+									<real>0.63</real>
+									<key>Red Component</key>
+									<real>0.90000000000000002</real>
+								</dict>
+							</dict>
+							<key>layout advanced configuration dictionary value</key>
+							<dict>
+								<key>algorithm</key>
+								<integer>0</integer>
+							</dict>
+						</dict>
+					</dict>
+					<dict>
+						<key>class</key>
 						<string>iTermStatusBarCPUUtilizationComponent</string>
 						<key>configuration</key>
 						<dict>
@@ -1520,9 +1558,9 @@ Survey:Restore Window Arrangement as Tabs</string>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.63</real>
-									<key>Red Component</key>
 									<real>0.90000000000000002</real>
+									<key>Red Component</key>
+									<real>0.84599999999999997</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1550,13 +1588,13 @@ Survey:Restore Window Arrangement as Tabs</string>
 									<key>Alpha Component</key>
 									<real>1</real>
 									<key>Blue Component</key>
-									<real>0.63</real>
+									<real>0.7380000000000001</real>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
 									<real>0.90000000000000002</real>
 									<key>Red Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.63</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1586,7 +1624,7 @@ Survey:Restore Window Arrangement as Tabs</string>
 									<key>Color Space</key>
 									<string>sRGB</string>
 									<key>Green Component</key>
-									<real>0.90000000000000002</real>
+									<real>0.73799999999999988</real>
 									<key>Red Component</key>
 									<real>0.63</real>
 								</dict>
@@ -1622,7 +1660,7 @@ Survey:Restore Window Arrangement as Tabs</string>
 									<key>Green Component</key>
 									<real>0.63</real>
 									<key>Red Component</key>
-									<real>0.76500000000000001</real>
+									<real>0.8460000000000002</real>
 								</dict>
 							</dict>
 							<key>layout advanced configuration dictionary value</key>
@@ -1687,7 +1725,7 @@ Survey:Restore Window Arrangement as Tabs</string>
 	<key>NoSyncInstallationId</key>
 	<string>D1F8F32D-285E-4C3B-AC41-DAF3EFF49789</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>23</integer>
+	<integer>28</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>587051627.67152905</real>
 	<key>NoSyncOnboardingWindowHasBeenShown</key>
