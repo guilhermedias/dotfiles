@@ -7,6 +7,8 @@ else
     local user_symbol='$'
 fi
 
+local user_icon='%BⲮ%b'
+
 local current_dir_pref='%~'
 
 if [[ "$ITERM_PROFILE" == "Trainer" ]]; then
@@ -17,7 +19,7 @@ local current_dir='%{$terminfo[bold]$fg[blue]%}${current_dir_pref}%{$reset_color
 
 local git_branch='$(git_prompt_info)%{$reset_color%}'
 
-PROMPT="╭─○ ${user_host} 🏹 ${current_dir} ${git_branch}
+PROMPT="╭─○ ${user_host} ${user_icon}  ${current_dir}
 ╰─○ %B${user_symbol}%b "
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}["
