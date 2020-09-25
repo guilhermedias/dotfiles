@@ -22,8 +22,13 @@ set encoding=utf8
 " Load configuration modules
 source ~/.vim/modules/colors.vim
 
+source ~/.vim/modules/vimtex.vim
+
 " Plugins
 call plug#begin('~/.vim/plugged')
-  " Nerd Tree
+  " NERDTree
   Plug 'scrooloose/nerdtree'
+
+  " vimtex
+  Plug 'lervag/vimtex'
 call plug#end()

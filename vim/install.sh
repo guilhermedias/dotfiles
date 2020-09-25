@@ -35,6 +35,7 @@ ln -sf $PWD/vim/config/autoload/plug.vim ~/.vim/autoload/plug.vim
 
 mkdir -p ~/.vim/modules
 ln -sf $PWD/vim/config/modules/colors.vim ~/.vim/modules/colors.vim
+ln -sf $PWD/vim/config/modules/vimtex.vim ~/.vim/modules/vimtex.vim
 
 mkdir -p ~/.vim/colors
 ln -sf $PWD/vim/config/colors/gruvbox.vim ~/.vim/colors/gruvbox.vim
