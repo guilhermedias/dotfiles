@@ -80,7 +80,7 @@ function configure_right_justified_prompt {
 }
 
 function current_time_millis {
-  echo $(python -c 'import time; print(int(round(time.time() * 1000)))')
+  echo $(python3 -c 'import time; print(int(round(time.time() * 1000)))')
 }
 
 function calculate_milliseconds {
