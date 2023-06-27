@@ -6,6 +6,9 @@ set expandtab
 set ts=2
 set sw=2
 
+" Disable line wrapping
+set nowrap
+
 " Enable syntax highlight
 syntax enable
 
